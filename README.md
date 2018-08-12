@@ -1,2 +1,2 @@
 # schoolCode
-Projects for School
+This repo contains school projects
