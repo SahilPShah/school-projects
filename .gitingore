@@ -1,0 +1,15 @@
+#ignore file for the schoolCode repo
+#author: Sahil Shah
+
+
+
+#Object Files
+*.o
+
+
+#Images
+*png
+*jpg
+
+#Executables
+*.exe
