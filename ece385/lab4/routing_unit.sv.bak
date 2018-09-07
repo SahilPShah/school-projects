@@ -1,0 +1,16 @@
+module routing_unit(input A_,B_,func, input [1:0] R, output A,B);
+always_comb
+begin
+	case(R)
+		2'b00 : A=A_;
+				  B=B_;
+		2'b01 : A=A_;
+				  B=func;
+		2'b10 : A=func;
+				  B=B_;
+		default : A=B_;
+					 B=A_;
+	endcase
+end 
+endmodule
+					 

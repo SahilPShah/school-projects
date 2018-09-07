@@ -1,0 +1,93 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do lab4_adders_toplevel_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/posid/OneDrive/Documents/ECE\ 385\ LAB/Lab\ 4/Adders\ provided\ code {C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/Adders provided code/HexDriver.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:48:43 on Feb 04,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/Adders provided code" C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/Adders provided code/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 12:48:43 on Feb 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/posid/OneDrive/Documents/ECE\ 385\ LAB/Lab\ 4/Adders\ provided\ code {C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/Adders provided code/carry_select_adder.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:48:43 on Feb 04,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/Adders provided code" C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/Adders provided code/carry_select_adder.sv 
+# -- Compiling module carry_select_adder
+# 
+# Top level modules:
+# 	carry_select_adder
+# End time: 12:48:43 on Feb 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/posid/OneDrive/Documents/ECE\ 385\ LAB/Lab\ 4/All\ Adders\ PROJECT {C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/All Adders PROJECT/Full_Ripple_Adder.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:48:43 on Feb 04,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/All Adders PROJECT" C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/All Adders PROJECT/Full_Ripple_Adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:48:43 on Feb 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/posid/OneDrive/Documents/ECE\ 385\ LAB/Lab\ 4/All\ Adders\ PROJECT {C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/All Adders PROJECT/Carry_Select_Adder_4_bit.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:48:43 on Feb 04,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/All Adders PROJECT" C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/All Adders PROJECT/Carry_Select_Adder_4_bit.sv 
+# -- Compiling module CSA_4bit
+# 
+# Top level modules:
+# 	CSA_4bit
+# End time: 12:48:43 on Feb 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/posid/OneDrive/Documents/ECE\ 385\ LAB/Lab\ 4/Adders\ provided\ code {C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/Adders provided code/lab4_adders_toplevel.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:48:43 on Feb 04,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/Adders provided code" C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/Adders provided code/lab4_adders_toplevel.sv 
+# -- Compiling module lab4_adders_toplevel
+# 
+# Top level modules:
+# 	lab4_adders_toplevel
+# End time: 12:48:43 on Feb 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/posid/OneDrive/Documents/ECE\ 385\ LAB/Lab\ 4/All\ Adders\ PROJECT {C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/All Adders PROJECT/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:48:43 on Feb 04,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/All Adders PROJECT" C:/Users/posid/OneDrive/Documents/ECE 385 LAB/Lab 4/All Adders PROJECT/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:48:43 on Feb 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -gui "+altera" -l msim_transcript -do "lab4_adders_toplevel_run_msim_rtl_verilog.do" 
+# Start time: 12:48:43 on Feb 04,2018
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.carry_select_adder
+# Loading work.CSA_4bit
+# Loading work.full_adder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 200 ns
+# End time: 12:49:14 on Feb 04,2018, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 0

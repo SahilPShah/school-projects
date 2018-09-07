@@ -1,0 +1,22 @@
+Compilation Results:
+********************
+dice.c: In function 'roll_three':
+dice.c:4:5: error: implicit declaration of function 'rand' [-Werror=implicit-function-declaration]
+     *one = rand()%6+1;
+     ^
+cc1: all warnings being treated as errors
+
+Test Input Seed = 133, Answer = 2 5 4
+Please input a seed: 2 5 4
+
+Test Input Seed = 134, Answer = 2 4 2
+Please input a seed: 2 4 2 Double!
+
+Test Input Seed = 135, Answer = 5 5 5
+Please input a seed: 5 5 5 Triple
+
+Grade: 10
+******
+Late submission: 0
+Functionality:
+Total: 

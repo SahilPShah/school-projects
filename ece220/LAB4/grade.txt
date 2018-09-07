@@ -1,0 +1,11 @@
+Compilation Results:
+********************
+
+Test Input of 20, Answer = 2, 3, 5, 7, 11, 13, 17, 19
+Please input a character 2 3 5 7 11 13 17 19 
+
+Grade:
+******
+Late submission: 0
+Functionality:
+Total: 

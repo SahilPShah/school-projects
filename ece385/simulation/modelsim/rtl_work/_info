@@ -1,0 +1,34 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Owner/Desktop/schoolCode/ece385/simulation/modelsim
+vadder2
+DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1517507389
+!i10b 1
+!s100 JO^E:<1l5mWJOCgVlVNM]0
+I3NjXmK3`G2`WJil9_c>Kg0
+V`JN@9S9cnhjKRR_L]QIcM3
+!s105 adder2_sv_unit
+S1
+R0
+w1517453316
+8C:/Users/Owner/Desktop/schoolCode/ece385/adder2.sv
+FC:/Users/Owner/Desktop/schoolCode/ece385/adder2.sv
+L0 1
+OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1517507389.553000
+!s107 C:/Users/Owner/Desktop/schoolCode/ece385/adder2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Owner/Desktop/schoolCode/ece385|C:/Users/Owner/Desktop/schoolCode/ece385/adder2.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/Owner/Desktop/schoolCode/ece385

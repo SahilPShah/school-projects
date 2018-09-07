@@ -1,0 +1,18 @@
+20:12:26 **** Incremental Build of configuration Nios II for project lab7_app ****
+make all 
+Info: Building ../lab7_app_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab7_app_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab7_app_bsp//HAL/inc -I../lab7_app_bsp/ -I../lab7_app_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking lab7_app.elf
+nios2-elf-g++  -T'../lab7_app_bsp//linker.x' -msys-crt0='../lab7_app_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab7_app_bsp/   -Wl,-Map=lab7_app.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o lab7_app.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert lab7_app.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x48 --timestamp 1519941685 --stderr_dev none --stdin_dev none --stdout_dev none --sopc_system_name lab7_soc --quartus_project_dir "C:/" --sopcinfo C:/software/lab7_app_bsp/../../lab7_soc.sopcinfo
+Info: (lab7_app.elf) 3812 Bytes program size (code + initialized data).
+Info:                131066 KBytes free for stack + heap.
+Info: Creating lab7_app.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab7_app.elf >lab7_app.objdump
+[lab7_app build complete]
+
+20:12:29 Build Finished (took 2s.837ms)
+
