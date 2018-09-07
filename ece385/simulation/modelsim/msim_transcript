@@ -1,0 +1,25 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do adder2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Owner/Desktop/schoolCode/ece385 {C:/Users/Owner/Desktop/schoolCode/ece385/adder2.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:49:49 on Feb 01,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Owner/Desktop/schoolCode/ece385" C:/Users/Owner/Desktop/schoolCode/ece385/adder2.sv 
+# -- Compiling module adder2
+# 
+# Top level modules:
+# 	adder2
+# End time: 11:49:49 on Feb 01,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
