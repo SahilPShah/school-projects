@@ -8,8 +8,8 @@
 
 
 #Images
-*png
-*jpg
+*.png
+*.jpg
 
 #Executables
 *.exe
