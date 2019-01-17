@@ -1,0 +1,6 @@
+[submodule "ece391/mp2"]
+	path = ece391/mp2
+	url = https://gitlab.engr.illinois.edu/ece391_fa18/mp2_sahils2
+[submodule "ece391/mp3"]
+	path = ece391/mp3
+	url = https://gitlab.engr.illinois.edu/ece391_fa18/mp3_group_20
