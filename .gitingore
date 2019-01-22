@@ -13,3 +13,8 @@
 
 #Executables
 *.exe
+
+#Unnecessary ECE 391 files
+ece391/source
+ece391/vm
+ece391/repos
