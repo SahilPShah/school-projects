@@ -1,0 +1,58 @@
+support 3 terminals
+    initialize all three on boot or as u need (doesnt matter)
+    should be able to switch as fast as possible and no crashes should occur
+
+
+support 6 processes
+    how to manage 6 processes is up to us
+    use upper limit on number of processes
+    should not crash or page fault on 7th process
+
+Multiple terminals
+    separate input buffers, save current text screen(current state of video memory)/cursor position/any other relavent information
+        need to allocate some space in memory to save Video memory (3 page table entries for 4 kB pages)
+    exiting shell does not exit other shells
+    exiting last shell: relaunch shell or prevent last shell from being halted
+
+
+Scheduling
+    fixed, equal slices with round-robin
+        order does not matter
+    used PIT(Programmable interval timer) and not RTC
+        helpful links:
+            https://wiki.osdev.org/Programmable_Interval_Timer
+            http://www.osdever.net/bkerndev/Docs/pit.htm
+        PTC allows for more flexibility
+        PIT is on IRQ0 -- highest priority
+    when typing, the characters should appear on the visible terminal (not the scheduled terminal)
+    test with counter pingpong fish
+    timing and synchronization may be an issue
+        uniprocessor does not guarentee no issues with timing and synchronization
+
+
+    PROCESS:
+        1. push all the registers for this current process
+        2. save ESP and EBP of current process
+        3. get the next active process by iterating through each active terminal
+        4. setup paging for the next process
+        5. setup new TSS information for the next process
+        6. set the ESP and EBP registers to the next process's ESP and EBP
+        7. popal then iret
+
+
+To switch between processes:
+    utilize the kernel stack (think about what we did for HALT)
+    use assembly to do the context switch
+    switch esp/ebp
+    restore new process' TSS
+    flush tlb on process switch
+
+possibilities for initial bootup method:
+    start each terminal on a pit interrupt (for the first 3 PIT interrupts)
+
+
+TA put all context switching and scheduling in the PIT interrupt handler
+    doesn't have to be done this way however
+
+TODO:
+1. speed up rtc write? (programs don't run very smoothly when running multiple ones)
