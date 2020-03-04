@@ -16,10 +16,9 @@ int main()
         for(i=1;i<=k;i++)//recursive loop to calculate kth coefficient
         {
             result = result * (n+1-i); //computation
-	    result /= i;
+	        result /= i;
         }
         printf("%lu ", result);
     }
-    printf("\n");
+    printf("\n");``
     return 0;
-}
