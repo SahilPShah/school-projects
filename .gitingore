@@ -1,7 +1,8 @@
 #ignore file for the schoolCode repo
 #author: Sahil Shah
 
-
+#vs code files
+.code-workspace
 
 #Object Files
 *.o
