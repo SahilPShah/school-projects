@@ -57,6 +57,11 @@ int get_semiprimes(int a, int b, int* array){
 
 int main(int argc, char** argv){
     //int i;
+    if(argc != 3){
+        printf("proper usage: ./mp4_verify <a> <b>\n");
+        printf("Aborting...\n");
+        return 0;
+    }
     int start = atoi(argv[1]);
     int end = atoi(argv[2]);
     int* semiprime_array = (int*) malloc(sizeof(int) * (end-start+2));
@@ -64,7 +69,7 @@ int main(int argc, char** argv){
         printf("ERROR: malloc failed");
         return 0;
     }
-    if(get_semiprimes(start, end, semiprime_array) == 0){
+    if(!get_semiprimes(start, end, semiprime_array)){
         printf("No semiprimes detected");
         return 0;
     }
