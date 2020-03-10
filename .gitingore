@@ -2,7 +2,7 @@
 #author: Sahil Shah
 
 #vs code files
-.code-workspace
+*.code-workspace
 
 #Object Files
 *.o
