@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include "mp4_verify.h"
 
 /* This is a what a proposed MP4 verification program could look like
@@ -48,22 +49,22 @@ int get_semiprimes(int a, int b, int* array){
             }
         }
     }
-    array[b] = num_semiprimes;
+    array[b-a+1] = num_semiprimes;
     return areSemiprimes;
 }
 //probably accessing something outside the bounds of the semiprime_array alloc'd here.
 //invalid memory access probably occurs in get_semiprimes
 
-int main(){
+int main(int argc, char** argv){
     //int i;
-    int start = 1;
-    int end = 10;
-    int* semiprime_array = (int*) malloc(sizeof(int) * (end-start+1));
+    int start = atoi(argv[1]);
+    int end = atoi(argv[2]);
+    int* semiprime_array = (int*) malloc(sizeof(int) * (end-start+2));
     if(semiprime_array == NULL){
         printf("ERROR: malloc failed");
         return 0;
     }
-    if(!get_semiprimes(start, end, semiprime_array)){
+    if(get_semiprimes(start, end, semiprime_array) == 0){
         printf("No semiprimes detected");
         return 0;
     }
@@ -72,5 +73,6 @@ int main(){
         printf("%d ", semiprime_array[i]);
     }
     printf("\n");
+    //run verification here
     return 1;
 }
